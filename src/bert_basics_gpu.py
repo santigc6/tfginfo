@@ -15,7 +15,7 @@ keras.backend.set_session(sess)
 #os.environ['CUDA_VISIBLE_DEVICES'] = '-1'
 #########################################
 
-(x_train, y_train), (x_test, y_test), preproc = text.texts_from_folder("aclImdb",
+(x_train, y_train), (x_test, y_test), preproc = text.texts_from_folder("../datasets/aclImdb",
                                                                         maxlen=500,
                                                                         preprocess_mode="bert",
                                                                         classes=["pos", "neg"])
