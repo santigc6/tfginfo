@@ -1,0 +1,56 @@
+Memoria, esto es importante. Recuerda que son 40 páginas mas anexos. Es la parte que mas reviso porque es la parte en la que mas se fijan, el código es que prácticamente les da igual. Lo ideal es que pudiese hacer 3 revisiones al menos para irte corrigiendo. Sus partes serían:
+
+40 paginas
+===========
+
+i) Introducción. (Cuenta el problema de mas general a mas específico, describiéndolo y motivándolo. Comenta muy brevemente la solución que vas a presentar en el documento. Presenta una organización de tu documento, (OPCIONAL: Notacion que vas a seguir).
+
+Ejemplo notacion.
+x: x es un escalar.
+\mathbf{x} x es un vector.
+X x es una matriz.
+
+ii) Estado del arte. Ojo a las referencias, deben estar perfectamente presentadas, es algo que el tribunal valora mucho. Puedes buscarlas en Google Scholar y dandole al boton " de cada artículo al final del listado de los formatos abajo te pone bibtex, pega en un .bib referenciado desde tu latex las referencias tal que así:
+
+fichero .bib
+@inproceedings{puente2013creating,
+  title={Creating a natural language summary from a compressed causal graph},
+  author={Puente, Cristina and Olivas, Jos{\'e} Angel and Garrido, E and Seisdedos, R},
+  booktitle={2013 joint ifsa world congress and nafips annual meeting (ifsa/nafips)},
+  pages={513--518},
+  year={2013},
+  organization={IEEE}
+}
+
+-> Introduccion. (Parrafito)
+-> Enfoques linguisticos. 
+-> Enfoques basados en aprendizaje automatico. (Aplicaciones).
+-> Conclusiones.
+
+fichero .tex
+\cite{puente2013creating}
+\bibliography{ficherobib}
+
+pdflatex fichero.tex && bibtex fichero && pdflatex fichero.tex && evince fichero.pdf & 
+
+iii) Definición del proyecto. Aquí exponemos una lista de bullets de objetivos, hipótesis, asunciones y restricciones de tu proyecto. Con esto, hemos acotado el alcance del mismo. Es el mayor escudo frente a preguntas del tribunal. Es la manera también mas fácil de hacer luego la sección de conclusiones, en la que simplemente referencias uno a uno los objetivos listados y pones su grado de alcance y si se han corroborado o no las hipótesis planteadas. Con asunciones puedes limitar el alcance desde el punto de vista de modelo y con restricciones desde el punto de vista técnico.
+
+iv) Diseño del proyecto. Esta sección la dividimos en 3 partes:
+
+a) Diseño funcional o diseño del modelo. Esto es una descripción del modelo matemático usado, como si fueras un matemático, debe ser lo mas formal y menos técnico posible.
+
+b) Diseño técnico. Esta parte resumirá la ingeniería del software de tu herramienta. Usa diagramas de flujo de datos con la metodología que mas te guste para describir tu herramienta. Es muy importante ser SUPER formal, si te toca en el tribunal alguien de IS, será en LO UNICO que se fije. Puedes poner un DFD de dos niveles, asegurándote que las entradas y salidas cuadren y que todo este brevemente descrito.
+
+c) Planificación del proyecto. Diagrama de Gantt del proyecto. Puntos extra si tus tareas están planificadas uniformemente a lo largo del año. Deben cuadrar con las horas esperadas para hacer en el TFG que ponga en la normativa, te dará puntos extra. Puedes hacerlo en Excel fácilmente, hay tutoriales en Youtube. Es una chorrada pero viste mucho. Antes no lo pedía pero creo que puede sorprender a ciertos miembros del tribunal. Describe bien cada tarea y su grado de dificultad o riesgo, encadenándola con el DFD mostrado en el apartado b.
+
+v) Implementación. Descripción técnica de los lenguajes usados, librerías empleadas (incluye versiones), sistema operativo, scripts y ficheros que has empleado. Referencia al DFD del apartado b para que se vea qué hace qué cosa y como lo hace.
+
+vi) Experimentos. Aquí muestra los experimentos que has realizado, en 2 partes. Cada experimento debe ir precedido de una descripción del experimento y luego de sus resultados. Haz algún gráfico. Por último un comentario del resultado de los experimentos.
+
+vii) Conclusiones y trabajo futuro. Esta sección es muy fácil. Empieza por un párrafo subjetivo y luego revisa los objetivos e hipótesis planteados en la definición del proyecto. Con eso ya lo tienes. Por último, mas subjetividad e ideas para trabajo futuro.
+
+Referencias. Importante ser muy formal.
+
+El contenido de cada sección debe ir precedido y postergado por un breve párrafo introductorio por un lado en el que describes que se va a comentar en esa sección y de que forma y en el final de la misma una breve conclusión y enlace con la siguiente sección para aportar coherencia y cohesión al texto.
+
+Sé que son muchas cosas, pero no te preocupes, te revisaré la memoria. Escríbeme con cualquier tipo de dudas. 
